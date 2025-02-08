@@ -1,0 +1,94 @@
+.bounty-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.bounty-container h1 {
+    width: 100%;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.bounty-container p {
+    width: 100%;
+    max-width: 800px;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Bounty Card Layout */
+.bounty-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bounty-box {
+    flex: 1 1 calc(30% - 20px);
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ddd;
+    min-width: 250px;
+}
+
+.bounty-box img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bounty-box h3 {
+    color: #228B22;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.bounty-box p {
+    font-size: 1rem;
+    color: #333;
+    max-width: 90%;
+}
+
+/* Hover Effects */
+.bounty-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    border-color: #228B22;
+}
+
+.bounty-box:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .bounty-box {
+        flex: 1 1 calc(45% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .bounty-box {
+        flex: 1 1 100%;
+    }
+}

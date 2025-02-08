@@ -1,0 +1,160 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+
+.tagline {
+    margin-top: 160px;
+  position: relative;
+  text-align: center;
+  color: white; /* Adjust text color for contrast */
+  padding: 50px;
+  z-index: 2;
+  height: 350px;
+}
+
+.tagline-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.background-img {
+  position: absolute;
+  width: 50%; /* Adjust based on your preference */
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5; /* Transparency effect */
+}
+
+.background-img:first-child {
+  left: 0;
+}
+
+.background-img:last-child {
+  right: 0;
+}
+.tagline-content {
+  position: relative;
+  top: 90px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay behind text */
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+
+.our-heading{
+    text-align: center;
+        font-family: "Lato", serif;
+
+}
+
+.card-main{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* flex-direction: column; */
+}
+/* Main Section */
+.marketplace-mission {
+    padding: 80px 10%;
+    background: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Section Container */
+.section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Image-Text Container */
+.image-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Reverse Order for Mission */
+.image-text-container.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Image Wrapper */
+.image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Styling */
+.section-image {
+    width: 450px; /* Increased size */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect - Zoom Image */
+.image-wrapper:hover {
+    transform: scale(1.05);
+}
+
+/* Text Content */
+.section-text {
+    flex: 1;
+    max-width: 600px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Headings */
+.section-text h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2d7a2d;
+}
+
+/* Paragraphs */
+.section-text p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Hover Effects */
+.section-text h1:hover {
+    color: #1e5e1e;
+    text-decoration: underline;
+}
+
+.section-text p:hover {
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .image-text-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-wrapper {
+        order: -1;
+    }
+
+    .section-image {
+        width: 90%;
+    }
+}
